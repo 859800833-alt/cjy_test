@@ -1,7 +1,19 @@
 <!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Weixin
+<view class="index-page">
+  <view class="title-container">
+    <text class="title">疯狂猜词</text>
+    <text class="subtitle">欢乐聚会游戏</text>
   </view>
-</scroll-view>
+  
+  <view class="rule-tip">
+    <text>一人持机，众人描述，你来猜词！</text>
+  </view>
+  
+  <button class="start-btn" bindtap="startGame">开始游戏</button>
+  
+  <view class="decoration">
+    <text class="decoration-text">🎮</text>
+    <text class="decoration-text">🎯</text>
+    <text class="decoration-text">🏆</text>
+  </view>
+</view>

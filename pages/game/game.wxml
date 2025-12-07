@@ -1,0 +1,33 @@
+<!--game.wxml-->
+<view class="game-page">
+  <!-- 顶部信息栏 -->
+  <view class="top-bar">
+    <view class="timer">
+      <text class="time-text">{{timeLeft}}</text>
+      <view class="progress-bar">
+        <view class="progress-fill" style="width: {{progress}}%"></view>
+      </view>
+    </view>
+    <view class="score">
+      <text>已猜对：{{correctCount}} 个</text>
+    </view>
+  </view>
+
+  <!-- 词语显示区域 -->
+  <view class="word-container" bindtap="toggleWordVisibility">
+    <view class="word-mask" wx:if="{{!isWordVisible}}">
+      <text class="mask-text">点击显示词语</text>
+    </view>
+    <text class="word-text" wx:else>{{currentWord}}</text>
+  </view>
+
+  <!-- 操作按钮区域 -->
+  <view class="action-buttons">
+    <view class="button correct-btn" bindtap="handleCorrect">
+      <text class="button-text">✓ 正确</text>
+    </view>
+    <view class="button skip-btn" bindtap="handleSkip">
+      <text class="button-text">✗ 跳过</text>
+    </view>
+  </view>
+</view>
