@@ -1,0 +1,25 @@
+<!--result.wxml-->
+<view class="result-page">
+  <view class="result-container">
+    <text class="result-title">游戏结束</text>
+    
+    <view class="score-display">
+      <text class="score-number">{{score}}</text>
+      <text class="score-label">猜对 {{score}} 个词语</text>
+    </view>
+
+    <view class="evaluation">
+      <text class="evaluation-text">{{evaluation}}</text>
+    </view>
+  </view>
+
+  <view class="action-buttons">
+    <button class="btn restart-btn" bindtap="restartGame">再来一局</button>
+    <button class="btn home-btn" bindtap="goHome">返回首页</button>
+  </view>
+
+  <view class="decoration">
+    <text class="decoration-icon">🎉</text>
+  </view>
+</view>
+
